@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Code:You Keystone - Jodie Mullins </title>
+
+        <!-- FONT styling 
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+        -->
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/logoKQ.png" />
+
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+
+        <!-- icon styling :
+            <link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
+
+    </head> <!-- end head -->
+
+    <body>
+
+
+        <header>
+
+            <div class="logo-div">
+                <a href="index.html" class="header-logo-a"><img id="home-page-logo" class="logo-throughout" alt="KQ-logo" src="img/logoKQ.png" ></a>
+            </div>
+
+            <div class="div-search">
+                <input id="hp-search-bar" class="search-bars" type="text" placeholder="Search KQ Fashion" />
+
+                <button class="search-button" type="submit">
+                    <span class="material-symbols-outlined">
+                    Search
+                  </span>
+                </button>
+
+            </div>
+
+            <div id="h-div-homepage-nav" class="header-nav-div">
+                <nav id="homepage-nav-bar" class="navs-throughout">
+                            
+                    <div class="header-nav-background-div">
+                        <ul id="homepage-nav-links" class="header-nav-links-throughout">
+                            <li id="homepage-home" class="home-throughout" ><a href="index.html" class="home-nav-button"> Home</a></li>
+                            <li id="homepage-seasonal" class="seasonal-throughout"><a href="seasonal.html" class="seasonal-nav-button"> Seasonal </a></li>
+                            <li id="homepage-promo" class="promo-throughout"><a href="promo.html" class="promo-nav-button"> Promo </a></li>
+                            <li id="homepage-contact" class="contact-throughout"><a href="contact.html" class="contact-nav-button"> Contact </a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div> <!--class="header-nav-div" -->
+
+
+        </header>
+
+
+        <main id="homepage-main">
+
+ <!--          <h1> KQ FASHION </h1> --> 
+
+
+ <!-- TEMPERATURE CONVERSION -->
+            <section id="conversion-weather-section" class="sect">
+
+                <div id="div-hp-hot-shoes" class="hp-image-divs">
+                    
+                    <h3 id="front-page-shoe" class="shoe-titles"> > NAVIS < </h3>
+                    
+                    
+                    <!--    
+                    
+                            I WANT: 
+                                >>> image to be pulled from API
+                    -->
+                    <img id="hot-shoes" class="hp-images" src="img/hp_tempconv.jpg" alt="Very strappy open-toed high heel shoe" />
+                
+                    <div id="d-temps" class="div-input">
+
+                        <h3 id="hp-temp-question"> Is it hot enough to wear those shoes?!</h3>
+    
+                            <p id="cel" class="inputting-space">
+
+
+                                <!--
+                                            A <label> isn't associated 
+                                                with a form field.
+
+
+                                            To fix this issue, 
+                                            nest the <input> in the <label> 
+                                                or provide a for attribute 
+                                                on the <label> that matches a form field id
+
+                                -->
+                            <label id="label-c-temp">Celsius</label>
+
+
+
+                            
+                            <input id="inputCelsius" type="number" placeholder="C"
+                            oninput="temperatureConverter(this.value)"
+                            onchange="temperatureConverter(this.value)" />
+                            </p>
+    
+                            <p id="states-temp">Fahrenheit: <span id="outputFahrenheit"></span></p>
+                        
+    
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section>
+
+                
+                
+                <!-- 
+                    WANT:
+                    (Semi-)Functional Search Bar (type in blue, flower, or brand name)
+                    User input for shoe size =>  taken directly to a show
+                    
+                    API functionality (????) on front-page >> localStorage?? Which API???
+                    
+                    CONTACT FORM!!! AND WORKING DATABASE!! 
+                    
+                -->
+            </section>
+        </main>
+        
+        <div class="div-foot">
+            <footer id="hp-foot" > Demo Site by: <a class="foot-link" href="https://www.linkedin.com/in/jodiepdm">Jodie Mullins</a></footer>
+        </div>
+
+    <script src="jscript.js"></script>
+
+
+    </body> <!-- end body -->
+
+
+
+</html>
+

@@ -1,0 +1,390 @@
+/**********************************************************
+                HOME PAGE & ALL HEADERS / FOOTERS
+**********************************************************/
+@font-face {
+    font-family: "Vonique64";
+    src: local("Vonique64.ttf"),
+        url("./fonts/vonique-64/Vonique64.ttf");
+}
+
+@font-face {
+    font-family: "audiowide";
+    src: local("Audiowide-Regular.ttf"),
+        url("./fonts/Audiowide/Audiowide-Regular.ttf");
+}
+
+
+body {
+    background-color: #f0f7f6;
+    font-family: sans-serif, monospace;
+}
+
+
+
+
+.logo-div {
+    display:flex;
+}
+
+.header-logo-a {
+    display:flex;
+    width: -moz-fit-content;
+    width: fit-content;    
+    justify-content:start;
+}
+
+.logo-throughout {
+    display: flex;
+    width: 25vh;
+    border: 2px solid #f3dfc1;
+    border-radius: 10px;
+    background-color: #160f29;
+    padding: 0px;
+    cursor:pointer;
+ /*   box-shadow: 2px 2px 40px ;*/
+}
+
+
+/* whole header area */
+.header-nav-div{
+    justify-content: space-around;
+    padding: 0px 5px;
+/*    box-shadow: 0px 0px 2px 0px #0f0f0f ;*/
+/*    border-radius: 20px;*/
+/*    border-bottom: 1px solid #242b2a;*/
+
+}
+
+.header-nav-links-throughout{
+
+    font-weight: 100;
+    margin: 1vh;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+ /*   border:2px solid #ddbea8;
+    border-radius: 10%;*/
+    color:#160f29;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.home-nav-button, .seasonal-nav-button, .promo-nav-button, .contact-nav-button {
+    text-decoration: none;
+    color:#160f29;
+
+}
+
+.home-nav-button:hover, .seasonal-nav-button:hover, .promo-nav-button:hover, .contact-nav-button:hover{
+    background-color: #f3dfc1;
+    color:#242b2a;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 1px #0f0f0f;
+    font-size: larger;
+    font-family:vonique64;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* send search bar area to the right of page */
+.div-search{
+    display: flex;
+    justify-content: end;
+}
+
+.search-bars {
+    display:inline;
+    max-width: 60%;
+    background-color: #dcfafc;
+    margin: 1vh 0;
+/*    border: 1px solid #160f29;*/
+    border: 0px;
+    border-radius: 30px;
+/*    box-shadow: 1px 0px 10px 1px #368f8b;*/
+    color:#160f29;
+}
+.search-bars:hover, .search-bars:hover::selection, .search-bars:hover:active {
+    background-color: #f3dfc1;
+    padding: 1vh;
+}
+
+
+.search-button  {
+    margin: 0px 0px 0px 5px;
+    border: 1px solid #160f29;
+    border-radius: 30px;
+}
+
+.search-button:hover {
+    background-color: #f3dfc1;
+    border: 3px solid #368f8b;
+    cursor:pointer;
+}
+
+/*#autocomplete-results*/
+
+/* Magnifying Glass icon*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 12
+  }
+
+/* 
+COLOR SCHEME
+#ddbea8 # salmony
+#368f8b # seafoamy
+#246a73 # KQ-ish blue
+#160f29 # darkest logo blue
+#f3dfc1 # yellowy
+
+*/
+
+h1 {
+    display: flex;
+    margin: 5% 2%;
+    font-family: "audiowide";
+    letter-spacing: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    box-shadow: 3px 3px 1px 4px #328d94;
+    padding: 1vh 3%;
+    justify-content: center;
+    font-size: 32px;
+
+}
+
+.h1-descriptions {
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.div-foot {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+footer {
+    font-size: small;
+    position: relative; 
+    bottom: 0;
+/*    left: 40%;
+    right: 40%;*/
+    margin: 4px auto;
+
+}
+
+.foot-link {
+    text-decoration: none;
+    color: #160f29;
+}
+
+
+/**********************************************************
+                        HOME PAGE
+**********************************************************/
+
+#hot-shoes {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 5% 10%;
+    border-radius: 10%;
+    border: 2px solid #160f29;
+
+}
+
+.hp-image-divs {
+    margin: 0px auto;
+    background-color: #328d94;
+
+    border-radius: 30px;
+    
+    border: 2px double #242b2a;
+}
+
+.div-input {
+    justify-content: center;
+    text-align: center;
+    margin: 0px 3vh 30% 3vh;
+}
+
+#front-page-shoe {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: vonique64;
+    letter-spacing: 3px;
+    font-size: 24px;
+
+}
+
+
+/**********************************************************
+                        SEASONAL 
+**********************************************************/
+.seasonal-selections {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10%;
+    border: 2px solid #328d94;
+    padding: 0px 0px;
+
+}
+
+
+/**********************************************************
+                        PROMO 
+**********************************************************/
+#promo-shoe {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 5% 10%;
+    border-radius: 10%;
+    border: 2px solid #160f29;
+}
+
+#promo-shoe-name {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: vonique64;
+    letter-spacing: 3px;
+    font-size: 24px;
+
+}
+
+#promo-info-sec {
+    margin-bottom: 5vh;
+}
+
+#promo-info-div {
+    border: 2px solid #368f8b;
+    border-radius: 30px;
+}
+
+#bid-price {
+    text-align: center;
+
+}
+
+#promo-features-list {
+    list-style:inside circle;
+}
+
+#promo-sale-sec {
+    text-align: center;
+    color: #f0f7f6;
+    border:4px solid #368f8b;
+    border-radius: 30px;
+    background-color: #160f29;
+    padding: 15px;
+
+}
+
+#halloween-header:hover {
+    color: rgb(228, 171, 67);
+    cursor: grab;
+}
+
+
+/**********************************************************
+                        CONTACT 
+**********************************************************/
+#contact-form {
+    text-align: center;
+    margin-top: 10%;
+    font-family:sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#contact-descr {
+    text-decoration: underline;
+}
+
+.contact-fieldsets {
+    border: none;
+    margin: 5%;
+    padding: 0px;
+}
+
+.contact-labels {
+    display:block;
+    margin: 1%;
+    padding: 0px;
+}
+
+.contact-legends {
+    margin: 0px auto;
+}
+
+#contactform-submit-button {
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, #160f29 0, #328d94 90%);
+    border: 0;
+    border: 1px solid rgb(19, 13, 17);
+    border-radius: 6px;
+    box-shadow: rgba(66, 35, 62, 0.4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #f3dfc1;
+    cursor:crosshair ;
+    display: inline-flex;
+    font-family: vonique64, sans-serif;
+    letter-spacing: 2px;;
+    font-weight: bold;
+    height: 48px;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 18px;
+ /*   opacity: .8;*/
+    margin-bottom: 20%;
+    padding: 8px;
+}
+
+/**********************************************************
+                        MEDIA QUERIES 
+**********************************************************/
+
+@media screen and (max-width: 300px) {
+
+    .header-logo-div {
+        margin: 0px;
+        justify-content: center;
+        margin: auto auto;
+        padding: 0px;
+    }
+
+    .logo-throughout {
+        margin: auto auto;
+/*        display: flex;
+        flex-wrap: nowrap;
+        margin: auto auto;*/
+        justify-content: center;
+        width: 20vh;
+    /*    border-radius: 50%;
+        background-color: #160f29;*/
+        padding: 0px;
+    
+    }
+    
+}
+
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Code:You Keystone - Jodie Mullins - Contact Page </title>
+
+        <!-- FONT styling 
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+        -->
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/logoKQ.png" />
+
+        <link rel="stylesheet" href="styles.css">
+
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        
+        <!-- icon styling :
+            <link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
+
+    </head> <!-- end head -->
+
+    <body>
+
+
+        <header>
+
+            <div class="logo-div">
+                <a href="index.html" class="header-logo-a"><img id="contact-page-logo" class="logo-throughout" alt="KQ-logo" src="img/logoKQ.png" ></a>
+            </div>
+
+            <div class="div-search">
+                <input id="contact-search-bar" class="search-bars" type="search" placeholder="Search KQ Fashion" />
+                <button class="search-button" type="submit">
+                    <span class="material-symbols-outlined">
+                    Search
+                  </span>
+                </button>
+            </div>
+
+            <div id="contact-div-homepage-nav" class="header-nav-div">
+                <nav id="contact-nav-bar" class="navs-throughout">
+                            
+                    <div class="header-nav-background-div">
+                        <ul id="contact-nav-links" class="header-nav-links-throughout">
+                            <li id="contact-home" class="home-throughout" ><a href="index.html" class="home-nav-button"> Home</a></li>
+                            <li id="contact-seasonal" class="seasonal-throughout"><a href="seasonal.html" class="seasonal-nav-button"> Seasonal </a></li>
+                            <li id="contact-promo" class="promo-throughout"><a href="promo.html" class="promo-nav-button"> Promo </a></li>
+                            <li id="contact-contact" class="contact-throughout"><a href="contact.html" class="contact-nav-button"> Contact </a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div> <!--class="header-nav-div" -->
+
+
+        </header>
+
+
+        <main>
+
+            <h1>REACH OUT</h1>
+            <p id="contact-descr" class="h1-descriptions"> Help us improve! We'd love to hear from you! </p>
+
+                <!-- CREATE POST METHOD..... WHERE DO I SEND IT? >> Pantry!! 
+                  
+                >> Provide Pantry Backup plan
+                >> HOWEVER, install CORS for functioning API
+                
+                     Create a form and store the submitted values 
+                     using an external API 
+                     (e.g. a contact form, survey, etc). 
+                     {Intermediate} 
+                
+                -->
+            <form id="contact-form" method="post" action="" enctype="multipart/form-data" >
+        
+            
+                <fieldset id="person-contacting" class="contact-fieldsets">
+                    <label id="contact-name-label" for="contact-name" class="contact-labels">Enter Your Full Name: <input id="contact-name" type="text" placeholder="Full Name Here" /></label>
+                    <label id="contact-email-label" for="contact-email" class="contact-labels">Email Address: <input id="contact-email" type="email" placeholder="example@email.com"  required/></label>
+                    <label id="contact-date-label" for="contact-date-input" class="contact-labels">Today's Date (optional) <input id="contact-date-input" type="date"  /></label>
+                </fieldset>
+                
+                <fieldset id="contact-reason" class="contact-fieldsets">
+                    <label id="motive-label" for="contact-motive" class="contact-labels"> What's your reason for reaching out today?
+                        <select id="contact-motive" name="motive-selection">
+                            <option value="7" >Computer Bug</option>
+                            <option value="6" >Mobile / Tablet Bug</option>
+                            <option value="5" >Size / Design Issue</option>
+                            <option value="4" >Exciting Offer</option>
+                            <option value="3" >Praise</option>
+                            <option value="2" >Suggestion</option>
+                            <option value="1" >Emergency</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset id="contact-checkboxes" class="contact-fieldsets">
+                    <legend class="contact-legends">Item(s) to Improve  </legend> (check all that apply)
+    
+                    <label for="contact-home-improve" class="contact-labels"><input id="contact-home-improve" name="improvement-type"  type="checkbox" value="exchanges"  /> Home </label>
+                    <label for="contact-seasonal-improve" class="contact-labels">   <input id="contact-seasonal-improve" name="improvement-type" type="checkbox" value="quotes"  /> Seasonal </label>
+                    <label for="contact-promo-improve" class="contact-labels"> <input id="contact-promo-improve" name="improvement-type" type="checkbox"  value="weather" /> Promo </label>
+                    <label for="contact-feature-improve" class="contact-labels"> <input id="contact-feature-improve" name="improvement-type" type="checkbox" value="feature"  /> Feature </label>
+                    <label for="form-improve" class="contact-labels">    <input id="form-improve" name="improvement-type" type="checkbox" value="contactform"  /> Contact Form </label>
+                    <label for="other-improve" class="contact-labels">   <input id="other-improve" name="improvement-type" type="checkbox" value="other"  /> Other </label>
+                </fieldset>
+    
+                <fieldset id="contact-y-n-radio" class="contact-fieldsets">
+                    <legend class="contact-legends"> Shall we contact you with a response? </legend>
+    
+                    <label for="contact-yes-response" class="contact-labels"><input id="contact-yes-response" name="respond" type="radio" value="yes"/> Yes </label>
+                    <label for="contact-no-response" class="contact-labels"><input id="contact-no-response" name="respond" type="radio" value="no" checked/> No </label>
+                </fieldset>
+    
+                <fieldset id="contact-suggestionbox" class="contact-fieldsets">
+                    <label for="contact-textarea" class="contact-labels">
+                        Comments:
+                        <textarea id="contact-textarea" type="text" value="info"></textarea>
+   
+                    </label>
+                </fieldset>
+    
+                
+                <label for="contactform-submit-button"> 
+                    <button id="contactform-submit-button" type="submit" value="Submit" name="submit-click">Submit Form</button>
+            
+                </label>
+                        
+                
+            </form> <!-- END FORM -->
+        </main>
+
+
+        
+
+        <div class="div-foot">
+            <footer id="hp-foot" > Demo Site by: <a class="foot-link" href="https://www.linkedin.com/in/jodiepdm">Jodie Mullins</a></footer>
+        </div>
+
+    <script src="jscript.js">
+
+
+     //   const files = document.getElementById("contact-form").files;
+     //   const farray = files[0]; // where farray is a file
+      // could I create JSON file from html and save that?? 
+      // do I want to send contact form data to database? 
+  
+    </script>
+
+    </body> <!-- end body -->
+
+
+
+</html>
+
