@@ -17,7 +17,20 @@ function temperatureConverter(valNum) {
 };
 
 
+function tempDecision(valnum) {
+    if (valnum < 0) {
+        decision = "Maybe with the thickest socks you've ever seen!";
+    } else if (valnum <= 10 ) {
+        decision = "Maybe if you're brave!";
+    } else if (valnum <= 20 ) {
+        decision = "Sounds good!";
+    } else if (valnum >= 21) {
+        decision = "A perfect day for strappy heels!";
+    } else (valnum > 36) 
+        decision = "Do these have built-in fans, too?!";
 
+    document.getElementById("shoeDecision").innerText = decision;
+};
 
 
 
