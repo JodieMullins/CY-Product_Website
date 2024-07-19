@@ -169,8 +169,10 @@ h1 {
 
 .div-foot {
     display: flex;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
     text-align: center;
     justify-content: center;
     justify-items: center;
