@@ -106,7 +106,13 @@ bidImages(imgdata);
 */
 
 
+/***
+ * 
+ *          SEASONAL / DESIGNS 
+ * 
+ ***/
 
+const productImages = ['']
 
 
 
