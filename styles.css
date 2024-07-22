@@ -234,7 +234,7 @@ footer {
 
 
 /**********************************************************
-                        SEASONAL 
+                        SEASONAL PRODUCT
 **********************************************************/
 .seasonal-selections {
     display: block;
@@ -251,6 +251,8 @@ footer {
 /**********************************************************
                         PROMO 
 **********************************************************/
+
+/**
 #promo-shoe {
     display: block;
     max-width: 80%;
@@ -285,9 +287,10 @@ footer {
 
 #promo-features-list {
     list-style:inside circle;
-}
+}*/
 
 #promo-sale-sec {
+    margin: 2rem;
     text-align: center;
     color: #f0f7f6;
     border:4px solid #368f8b;
