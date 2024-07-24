@@ -25,9 +25,9 @@ async function standardProductListingFiveItems() {
         const data = await response.json();
         console.log(data);
 
-        data.forEach((title) => {
-            
-        })
+//        data.forEach((title) => {
+
+//        })
 
 /*
 
@@ -48,7 +48,9 @@ async function standardProductListingFiveItems() {
     } catch (err) {
         console.log(" E R R ")
     }
-}
+
+    
+};
 
 
 /*
