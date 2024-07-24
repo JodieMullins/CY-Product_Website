@@ -25,6 +25,9 @@ async function standardProductListingFiveItems() {
         const data = await response.json();
         console.log(data);
 
+        data.forEach((title) => {
+            
+        })
 
 /*
 
