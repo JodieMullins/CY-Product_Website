@@ -11,7 +11,7 @@
  * 
 */
 
-
+/*
 async function standardProductListingFiveItems() {
 
 
@@ -29,6 +29,23 @@ async function standardProductListingFiveItems() {
 
 //        })
 
+
+    } catch (err) {
+        console.log(" E R R ")
+    }
+    
+};
+*/
+
+/*
+fetch(fiveItemsListedURL)
+            .then(res=>res.json())
+
+
+
+const apiContainer = document.getElementById('')
+*/
+
 /*
 
         // error handling
@@ -45,25 +62,9 @@ async function standardProductListingFiveItems() {
 */
 
 
-    } catch (err) {
-        console.log(" E R R ")
-    }
-
-    
-};
-
+//    standardProductListingFiveItems();
 
 /*
-fetch(fiveItemsListedURL)
-            .then(res=>res.json())
-
-
-
-const apiContainer = document.getElementById('')
-*/
-standardProductListingFiveItems();
-
-
 function productPageImages(data) {
 
     let productImageWholePage = ['prodONEimg', 'prodTWOimg', 'prodTHREEimg', 'prodFOURimg', 'prodFIVEimg'];
@@ -74,4 +75,55 @@ function productPageImages(data) {
         parentdiv.className = 'div-product-images'
     })
 
+};*/
+
+
+/**
+ * This gets 5 products
+ * @returns {}
+ */
+async function getAllProducts() {
+
+    const fiveItemsListedURL = 'https://fakestoreapi.com/products?limit=5';
+
+    try {
+        const response = await fetch(fiveItemsListedURL);
+
+        if (response.status !== 200 || !response.body) {
+            console.warn(' DID NOT REACH API ');
+            return null;
+        };
+        
+        const data = await response.json();
+
+        console.log(data);
+
+        return data
+
+
+    } catch (error) {
+        console.error(' E  R  R  O  R');
+    }
 };
+
+(async () => {
+    // Get all products from database.
+    const products = await getAllProducts();
+    // render all products on product listings page.
+    /**
+     * Get the product-list DOM Node
+     */
+    const productList = document.querySelector('#product-list');
+
+    return products.forEach((product) => {
+        const productListItem = document.createElement('li');
+        const productLink = document.createElement('a');
+        const productID = product.id;
+
+        productLink.setAttribute('href',  `product.html?pid=${productID}`);
+        productLink.innerText = product.title;
+
+        productListItem.appendChild(productLink);
+        productList.appendChild(productListItem);
+    })
+})();
