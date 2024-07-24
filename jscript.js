@@ -161,3 +161,13 @@ let remainingDays = Math.ceil(
 let saleMessage = ("There are " + remainingDays + " days remaining until the next HUGE Halloween sale!");
 
 document.getElementById("countdown-here").innerText = saleMessage;
+
+
+
+
+
+/***
+ * 
+ *          contact 
+ * 
+ ***/
