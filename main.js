@@ -82,6 +82,8 @@ function productPageImages(data) {
  * This gets 5 products
  * @returns {}
  */
+
+/*
 async function getAllProducts() {
 
     const fiveItemsListedURL = 'https://fakestoreapi.com/products?limit=5';
@@ -127,3 +129,47 @@ async function getAllProducts() {
         productList.appendChild(productListItem);
     })
 })();
+*/
+
+let URLArray = [ "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+
+    "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    
+    "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    
+    "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+    
+    "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" ]
+
+/*
+function fetchImage() {
+    
+    fetch("https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg")
+      .then((response) => response.blob())
+      .then((blob) => {
+        const imageUrl = URL.createObjectURL(blob);
+        const imageElement = document.createElement("img");
+        imageElement.src = imageUrl;
+        const container = document.getElementById("image-container");
+        container.appendChild(imageElement);
+      })
+      .catch((error) => console.error(error));
+  };
+
+
+
+  function fetchImageTwo() {
+    
+    fetch("https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg")
+      .then((response) => response.blob())
+      .then((blob) => {
+        const imageUrl = URL.createObjectURL(blob);
+        const imageElement = document.createElement("img");
+        imageElement.src = imageUrl;
+        const container = document.getElementById("image-container");
+        container.appendChild(imageElement);
+      })
+      .catch((error) => console.error(error));
+  };
+
+*/
