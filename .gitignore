@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+
+# Personal Files
+API_Images.txt
+
 # Demo .editorconfig
 .editorconfig
 

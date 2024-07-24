@@ -110,9 +110,9 @@ async function getAllProducts() {
     // Get all products from database.
     const products = await getAllProducts();
     // render all products on product listings page.
-    /**
-     * Get the product-list DOM Node
-     */
+  
+  //  Get the product-list DOM Node
+   
     const productList = document.querySelector('#product-list');
 
     return products.forEach((product) => {
