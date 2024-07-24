@@ -173,3 +173,25 @@ function fetchImage() {
   };
 
 */
+
+
+
+  function fetchImageTwo() {
+    
+// use map() to perform a fetch and handle the response for each url
+Promise.all(URLArray.map(url =>
+    fetch(url)
+      .then(checkStatus)                 
+      .then(parseJSON)
+      .catch(logError)
+  ))
+    .then(data =>
+        (response) => response.blob()
+        .then((blob) => {
+        const imageUrl = URL.createObjectURL(blob);
+        const imageElement = document.createElement("img");
+        imageElement.src = imageUrl;
+        const container = document.getElementById("image-container");
+        container.appendChild(imageElement);
+  })
+)};
