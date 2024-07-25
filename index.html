@@ -71,7 +71,7 @@
 
         <main id="homepage-main">
 
- <!--          <h1> KQ FASHION </h1> --> 
+           <h1 id="home-title"> KQ FAKE FASHION </h1> 
 
 
  <!-- TEMPERATURE CONVERSION -->
@@ -79,14 +79,10 @@
 
                 <div id="div-hp-hot-shoes" class="hp-image-divs">
                     
-                    <h3 id="front-page-shoe" class="shoe-titles"> > NAVIS < </h3>
+                    <h3 id="front-page-shoe" class="shoe-titles"> > NATIS STILETTO < </h3>
                     
                     
-                    <!--    
-                    
-                            I WANT: 
-                                >>> image to be pulled from API
-                    -->
+
                     <img id="hot-shoes" class="hp-images" src="img/hp_tempconv.jpg" alt="Very strappy open-toed high heel shoe" />
                 
                     <div id="d-temps" class="div-input">
@@ -106,18 +102,21 @@
                                                 or provide a for attribute 
                                                 on the <label> that matches a form field id
 
+                                    However, when I do that, it messes with my formatting I've 
+                                    painstakingly messed with to this point, so it's staying.
+
                                 -->
                             <label id="label-c-temp">Celsius</label>
 
 
 
-                            
+                            <!-- Perspective of American vacationing in South America / overseas -->
                             <input id="inputCelsius" type="number" placeholder="Temperature in Celcius"
                             oninput="temperatureConverter(this.value)"
                             onchange="temperatureConverter(this.value)" />
                             </p>
     
-                            <p id="states-temp">Fahrenheit: <span id="outputFahrenheit"></span></p>
+                            <p id="states-temp"><span id="outputFahrenheit"></span>  Fahrenheit </p>
 
                         
      

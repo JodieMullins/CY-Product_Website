@@ -195,3 +195,31 @@ Promise.all(URLArray.map(url =>
         container.appendChild(imageElement);
   })
 )};
+
+
+
+
+
+async function standardProductListingFiveItems() {
+
+
+    const fiveItemsListedURL = 'https://fakestoreapi.com/products?limit=5';
+
+    try {
+        const responseForFiveItems = await fetch(fiveItemsListedURL);
+
+        let response = responseForFiveItems
+
+        const data = await response.json();
+        console.log(data);
+
+//        data.forEach((title) => {
+
+//        })
+
+
+    } catch (err) {
+        console.log(" E R R ")
+    }
+    
+};

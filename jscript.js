@@ -13,21 +13,24 @@ function temperatureConverter(valNum) {
 
     // grab this item and display the output of 
     // an equation to translate Celcius into Fahrenheit 
-    document.getElementById("outputFahrenheit").innerText=(valNum * 1.8) +32 ;
+    document.getElementById("outputFahrenheit").innerText=(valNum * 1.8) +32 + "°  " ;
 };
 
 
-function tempDecision(valnum) {
-    if (valnum < 0) {
-        decision = "Maybe with the thickest socks you've ever seen!";
-    } else if (valnum <= 10 ) {
-        decision = "Maybe if you're brave!";
-    } else if (valnum <= 20 ) {
-        decision = "Sounds good!";
-    } else if (valnum >= 21) {
-        decision = "A perfect day for strappy heels!";
-    } else (valnum > 36) 
-        decision = "Do these have built-in fans, too?!";
+function tempDecision(valNum) {
+    // convert user string input to float
+    valNum = parseFloat(valNum);
+
+    if (valNum < 0) {
+        let decision = "Maybe with the thickest socks you've ever seen!"
+    } else if (valNum <= 10 ) {
+        let decision = "Maybe if you're brave!"
+    } else if (valNum <= 20 ) {
+        let decision = "Sounds good!"
+    } else if (valNum >= 21) {
+        let decision = "A perfect day for strappy heels!"
+    } else (valNum > 36) 
+        let decision = "Do these have built-in fans, too?!"
 
     document.getElementById("shoeDecision").innerText = decision;
 };
