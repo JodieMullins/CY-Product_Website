@@ -36,4 +36,4 @@ An easy way to run the project:
     - ensure Node.js is installed on the local machine
 
 4. Right-click within the 'index.html' file and choose 'Show Preview' to view / click on web pages. 
-    - Alternatively, may also copy the URL from the Live Preview window into a regular browser window for further inspection. 
+
