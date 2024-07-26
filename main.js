@@ -39,6 +39,8 @@ async function standardProductListingFiveItems() {
                     
                     // The image can be added dynamically here
                     const productImg = document.createElement('img');
+
+                    
                     
                     // set the image source here
                     productImg.src = item.image;

@@ -252,15 +252,16 @@ footer {
 .product {
     display: flex;
     justify-content: center;
-    max-width: 25vh;
-    height: 20vh;
+    max-width: 20em;
+    height: 20em;
     margin: 30px auto;
-    border-radius: 10%;
+/*    border-radius: 10%;*/
     border: 2px solid #328d94;
-    padding: 0px 0px;
+    padding: 5px 5px;
     background:white;
 
 }
+
 
 
 /**********************************************************
@@ -414,3 +415,19 @@ footer {
 }
 
 
+@media screen and (max-width: 364px) {
+
+    .product {
+        display: flex;
+        justify-content: center;
+        max-width: 15rem;
+        height: 15rem;
+        margin: 30px auto;
+        border: none;
+        padding: 5px 5px;
+        background:white;
+    
+    }
+    
+    
+}
