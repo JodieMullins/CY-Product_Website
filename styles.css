@@ -315,9 +315,14 @@ footer {
 
 }
 
-#halloween-header:hover {
+#sale-countdown-div:hover {
     color: rgb(228, 171, 67);
+    background-color: rgb(29, 27, 27);
     cursor: grab;
+}
+
+#promo-sale-sec:hover {
+    background-color: rgb(29, 27, 27);
 }
 
 
