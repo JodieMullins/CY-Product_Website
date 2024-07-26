@@ -205,9 +205,12 @@ footer {
 
 #hot-shoes {
     display: block;
-    max-width:80%;
-    height: auto;
+    justify-content: center;
+    max-width:40vh;
+    height: 40vh;
     margin: 5% 10%;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 10%;
     border: 2px solid #160f29;
 
@@ -233,7 +236,7 @@ footer {
     text-transform: uppercase;
     font-family: vonique64;
     letter-spacing: 3px;
-    font-size: 3em;
+    font-size: 2rem;
 
 }
 
@@ -244,16 +247,18 @@ footer {
 
 
 /**********************************************************
-                        SEASONAL PRODUCT
+                        PRODUCT
 **********************************************************/
-.seasonal-selections {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.product {
+    display: flex;
+    justify-content: center;
+    max-width: 25vh;
+    height: 20vh;
     margin: 30px auto;
     border-radius: 10%;
     border: 2px solid #328d94;
     padding: 0px 0px;
+    background:white;
 
 }
 

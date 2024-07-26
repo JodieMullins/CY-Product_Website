@@ -176,7 +176,7 @@ function fetchImage() {
 
 
 
-  function fetchImageTwo() {
+/*  function fetchImageTwo() {
     
 // use map() to perform a fetch and handle the response for each url
 Promise.all(URLArray.map(url =>
@@ -222,4 +222,67 @@ async function standardProductListingFiveItems() {
         console.log(" E R R ")
     }
     
+};
+*/
+
+
+const parentList = document.getElementById('product-list');
+
+
+async function standardProductListingFiveItems() {
+      fetch('https://fakestoreapi.com/products?limit=5')
+        // .then is to signify "Okay once you're done with that do this..."
+            .then(response => response.json())
+        // data from the response.json here
+            .then(data => {
+
+                console.log(data);
+                
+                // the data is returned as an array -- time for built in .forEach function
+                data.forEach(item => {
+                    
+                    // an unordered list as list items!
+                    const product = document.createElement('li');
+                    
+                    // The image can be added dynamically here
+                    const productImg = document.createElement('img');
+                    
+                    // set the image source here
+                    productImg.src = item.image;
+                    
+                    // set the alt text for the image
+                    productImg.alt = item.description;
+                    
+                    // adding a class to the product which will make for easier styling
+                    product.classList.add('product');
+                    
+                    // We will need the title for the hover effect
+                    let title = item.title;
+                    let productPrice = item.price;
+                    
+                    // click behavior to show the name & price
+                    // It passes the item.title to the show product info, 
+                    // created second event listener on the same click to simultaneously display price
+                    product.addEventListener('click', () => showTitleInfo(title));
+
+                    product.addEventListener('click', () => showPriceInfo(productPrice));
+                    
+                    // the img element inside the li element
+                    product.appendChild(productImg);
+
+                    // put the li element inside the ul element
+                    parentList.appendChild(product);
+
+                });
+            })
+    };
+
+    
+function showTitleInfo(title) {
+    console.log(`The item -- ${title} -- was clicked!`);
+
+};
+
+    function showPriceInfo(price) {
+    console.log(`The price is: $${price}`);
 };
