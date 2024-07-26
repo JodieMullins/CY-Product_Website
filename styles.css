@@ -312,16 +312,17 @@ footer {
     border-radius: 30px;
     background-color: #160f29;
     padding: 15px;
-
+    font-size: 150%;
 }
 
 #sale-countdown-div:hover {
-    color: rgb(228, 171, 67);
-    background-color: rgb(29, 27, 27);
+    
+ /*   background-color: rgb(29, 27, 27);*/
     cursor: grab;
 }
 
 #promo-sale-sec:hover {
+    color: rgb(228, 171, 67);
     background-color: rgb(29, 27, 27);
 }
 
