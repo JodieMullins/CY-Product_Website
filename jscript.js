@@ -11,12 +11,34 @@ function temperatureConverter(valNum) {
     // convert user string input to float
     valNum = parseFloat(valNum);
 
+    if (valNum < 0.00) {
+        let decision = "Maybe with the thickest socks you've ever seen!"
+        
+    } else if (valNum <= 10.00 ) {
+        let decision = "Maybe if you're brave!"
+
+    } else if (valNum <= 58.00 ) {
+        let decision = "Sounds good!"
+
+    } else if (valNum >= 72.00) {
+        let decision = "A perfect day for strappy heels!"
+
+    } else (valNum > 100.00) 
+        let decision = "Do these have built-in fans, too?!"
+   
+    document.getElementById("shoeDecision").innerText = decision;
+
+
     // grab this item and display the output of 
     // an equation to translate Celcius into Fahrenheit 
     document.getElementById("outputFahrenheit").innerText=(valNum * 1.8) +32 + "°  " ;
+
+    
+
+
 };
 
-
+/*
 function tempDecision(valNum) {
     // convert user string input to float
     valNum = parseFloat(valNum);
@@ -34,7 +56,7 @@ function tempDecision(valNum) {
 
     document.getElementById("shoeDecision").innerText = decision;
 };
-
+*/
 
 
 
