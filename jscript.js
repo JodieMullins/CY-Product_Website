@@ -10,21 +10,23 @@ function temperatureConverter(valNum) {
 
     // convert user string input to float
     valNum = parseFloat(valNum);
+    
+    let decision = " "
 
-    if (valNum < 0.00) {
-        let decision = "Maybe with the thickest socks you've ever seen!"
+    if (valNum < 0) {
+        decision = "Maybe with the thickest socks you've ever seen!"
         
-    } else if (valNum <= 10.00 ) {
-        let decision = "Maybe if you're brave!"
+    } else if (valNum <= 10) {
+        decision = "Maybe if you're brave!"
 
-    } else if (valNum <= 58.00 ) {
-        let decision = "Sounds good!"
+    } else if (valNum <= 20 ) {
+        decision = "Sounds good!"
 
-    } else if (valNum >= 72.00) {
-        let decision = "A perfect day for strappy heels!"
+    } else if (valNum <= 32) {
+        decision = "A perfect day for strappy heels!"
 
-    } else (valNum > 100.00) 
-        let decision = "Do these have built-in fans, too?!"
+    } else 
+        decision = "Do these have built-in fans, too?!"
    
     document.getElementById("shoeDecision").innerText = decision;
 
