@@ -28,6 +28,7 @@ This repository utilizes HTML, CSS, and vanilla JavaScript to create what a webs
 An easy way to run the project:
 
 1. Clone to local machine from GitHub
+    - HOW TO CLONE: Determine your desired file path and open Git Bash within the directory of choice. Type 'git clone [git URL]' and open the project folder in VSCode.
 
 2. Open project in Visual Studio Code
     - ensure VSCode Extension 'Live Preview' from Microsoft is installed

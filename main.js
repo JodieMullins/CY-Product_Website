@@ -15,7 +15,9 @@
 const parentList = document.getElementById('product-list');
 
 
-async function standardProductListingFiveItems() {
+//async function standardProductListingFiveItems() {
+
+document.addEventListener('DOMContentLoaded', () => {
 
     const fiveProducts = 'https://fakestoreapi.com/products?limit=5'
 
@@ -84,7 +86,7 @@ async function standardProductListingFiveItems() {
             console.log(" E R R ")
             window.alert(" API -- E R R O R ")
         }        
-};
+});
 
 function showTitleInfo(title) {
     console.log(`The item: ${title} was clicked!`);
