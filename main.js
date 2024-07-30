@@ -85,3 +85,7 @@ async function standardProductListingFiveItems() {
             window.alert(" API -- E R R O R ")
         }        
 };
+
+function showTitleInfo(title) {
+    console.log(`The item: ${title} was clicked!`);
+    }
