@@ -24,7 +24,7 @@ This repository utilizes HTML, CSS, and vanilla JavaScript to create what a webs
 
 - [] Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file). {OPTIONAL - ATTEMPTED} {Easy/Intermediate} (Original attempt: https://github.com/JodieMullins/CY-WebDev)
 
-Special feature thanks to Pluralsight: Mock API 
+Special feature attempted thanks to Pluralsight: Mock API 
 
 ----------------------------------------------------------------------------------------
 
