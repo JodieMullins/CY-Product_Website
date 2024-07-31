@@ -3,7 +3,7 @@
 
 
 
-This repository utilizes HTML, CSS, and vanilla JavaScript to create what a website may look like across browser and mobile views. 
+This repository utilizes HTML, CSS, and vanilla JavaScript to create what a website may look like across browser and mobile views. Using API calls, a product page loads, and pages adjust depending on size of screen.
 
 [x] Responsive Design {Best Practice} [All Pages]
 
