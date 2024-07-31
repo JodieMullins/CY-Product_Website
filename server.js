@@ -30,9 +30,12 @@ const app = express();
 // register routes
 const apiRouter = express.Router();
 
+// Shoes router
 apiRouter.use("/shoes", shoesRouter);
-apiRouter.use("/customers", customersRouter);
-apiRouter.use("/orders", ordersRouter); // ROUTING
+
+// I don't have customers or orders to route yet
+/*apiRouter.use("/customers", customersRouter);*/
+/*apiRouter.use("/orders", ordersRouter);*/ // ROUTING
 
 export const routes = express.Router();
 routes.use("/api", apiRouter);
@@ -89,7 +92,7 @@ router.get('/search', function (req, res, next) {
 
   // go through the shoe JSON object and search for requested data
   shoeInfo.search(searchObject, function (data) {
-    // succeessfully retrieving data will display 200 response with message as specified 
+    // successfully retrieving data will display 200 response with message as specified 
     res.status(200).json({
       "status": 200,
       "statusText": "OK",

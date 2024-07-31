@@ -19,6 +19,7 @@ const parentList = document.getElementById('product-list');
 
 document.addEventListener('DOMContentLoaded', () => {
 
+        // easily change URL to fetch from
     const fiveProducts = 'https://fakestoreapi.com/products?limit=5'
 
     try {
