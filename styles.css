@@ -254,13 +254,14 @@ footer {
     justify-content: center;
     max-width: 20em;
     height: 20em;
-    margin: 30px auto;
+    margin: 35px auto;
 /*    border-radius: 10%;*/
     border: 2px solid #328d94;
-    padding: 5px 5px;
+    padding: 10px 10px;
     background:white;
 
 }
+
 
 
 
