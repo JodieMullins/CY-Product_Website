@@ -3,7 +3,7 @@
 
 
 
-This repository utilizes HTML, CSS, and vanilla JavaScript to create what a website may look like across browser and mobile views. Using API calls, a product page loads, and pages adjust depending on size of screen.
+This repository utilizes HTML, CSS, and vanilla JavaScript to create what a website may look like across browser and mobile views. Using API calls, a product page loads, and pages adjust depending on size of screen. 
 
 - [x] Responsive Design {Best Practice} [All Pages]
 
@@ -24,6 +24,8 @@ This repository utilizes HTML, CSS, and vanilla JavaScript to create what a webs
 
 - [] Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file). {OPTIONAL - ATTEMPTED} {Easy/Intermediate} (Original attempt: https://github.com/JodieMullins/CY-WebDev)
 
+Special feature thanks to Pluralsight: Mock API 
+
 ----------------------------------------------------------------------------------------
 
 An easy way to run the project:
@@ -40,6 +42,10 @@ An easy way to run the project:
 4. Right-click within the 'index.html' file and choose 'Show Preview' to view / click on web pages. 
 
 -------------------------------------------------------------------------------------------
+
+### Special Thanks
+
+A huge thanks to all the mentors with Code:You that helped make this project possible from the January 2024 cohort. This project has been deleted and re-created about three or four times with various feature lists attempted, but it has been an indespensible learning experience. Thank you, Code:You mentors. <3 
 
 
 
