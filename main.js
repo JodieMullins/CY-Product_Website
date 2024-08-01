@@ -70,8 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     // click behavior to show the name & price
                     // established to produce information ONLY ONE TIME upon click 
                     product.addEventListener('click', () => showInfo(item), { once: true });
-                    // established to produce information ONLY ONE TIME upon click 
-                    product.addEventListener('click', () => showInfo(item), { once: true });
 
                     
                     // the img element inside the li element
