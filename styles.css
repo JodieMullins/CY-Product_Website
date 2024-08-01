@@ -252,12 +252,12 @@ footer {
 .product {
     display: flex;
     justify-content: center;
-    max-width: 60em;
+    max-width: 95%;
     height: 15em;
     margin: 10px auto;
 /*    border: 2px solid #328d94;*/
     background-color: #328d94;
-    border-radius: 10%;
+    border-radius: 10px;
     padding: 50px 10px;
 }
 

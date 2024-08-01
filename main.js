@@ -113,7 +113,7 @@ function showInfo(item) {
     productPrice.classList.add('priceOFProduct')
 
     // change element to display item specified from API 
-    productPrice.innerText = item.price
+    productPrice.innerText = "$" +item.price
 
     // create child element with product2 parent element
     product2.appendChild(productTitle)
