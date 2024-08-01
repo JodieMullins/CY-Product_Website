@@ -30,6 +30,8 @@ Special feature attempted thanks to Pluralsight: Mock API
 
 An easy way to run the project:
 
+*** You will likely have a better experience in FireFox, but this method will open via user's default browser ***
+
 1. Clone to local machine from GitHub
     - HOW TO CLONE: Determine your desired file path and open Git Bash within the directory of choice. Type 'git clone [git URL]' and open the project folder in VSCode.
 
@@ -40,6 +42,8 @@ An easy way to run the project:
     - ensure Node.js is installed on the local machine
 
 4. Right-click within the 'index.html' file and choose 'Show Preview' to view / click on web pages. 
+
+NOTE: tested in FireFox and Chrome
 
 -------------------------------------------------------------------------------------------
 

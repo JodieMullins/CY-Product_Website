@@ -69,7 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     // click behavior to show the name & price
                     // established to produce information ONLY ONE TIME upon click 
-                    product.addEventListener('mousemove', () => showInfo(item), { once: true });
+                    //mousemove works funky in Chrome
+                    // fix #1 is to test scroll
+                    product.addEventListener('scroll', () => showInfo(item), { once: true });
 
                     
                     // the img element inside the li element
