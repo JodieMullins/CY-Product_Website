@@ -63,9 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     
                     // click behavior to show the name & price
-                    // It passes the item.title to the show product info, 
-                    // created second event listener on the same click to simultaneously display price
-                    product.addEventListener('click', () => showInfo(item));
+                    // established to produce information ONLY ONE TIME upon click 
+                    product.addEventListener('click', () => showInfo(item), { once: true });
 
                     
                     // the img element inside the li element
@@ -98,10 +97,12 @@ function showInfo(item) {
     product2 = document.getElementById(item.id)
 
     productTitle = document.createElement('p')
+    productTitle.classList.add('titleOfProducts')
     
     productTitle.innerText = item.title
 
     productPrice = document.createElement('p')
+    productPrice.classList.add('priceOFProduct')
 
     productPrice.innerText = item.price
 
