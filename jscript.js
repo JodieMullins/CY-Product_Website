@@ -198,3 +198,20 @@ document.getElementById("countdown-here").innerText = saleMessage;
  *          contact 
  * 
  ***/
+// product.addEventListener('mouseover', () => showInfo(item), { once: true });
+
+// storage attempt
+function includeSomeStorage() {
+
+    let uclientName = document.getElementById('contact-name').value
+
+
+            // document.getElementById('contact-name').value
+
+    window.sessionStorage.setItem("name", uclientName)
+
+    let currentUserFullName = sessionStorage.getItem(uclientName)
+
+    return currentUserFullName
+
+}
