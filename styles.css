@@ -445,13 +445,42 @@ footer {
     
 }
 
+@media screen and (max-width: 364px) {
+    .img {
+        display:flex;
+        margin: 20% 5%;
+        max-width: 5rem;
+        max-height: 5rem;
 
+        padding: 10% 5%;
+    }
+}
+
+
+/*
 @media screen and (max-width: 364px) {
 
     .product {
         display: flex;
         justify-content: center;
-        max-width: 15rem;
+        max-width: 95%;
+        height: 15rem;
+        margin: 30px auto;
+        border: none;
+        padding: 5px 5px;
+        background:white;
+    
+    }
+    
+    
+}*/
+
+@media screen and (max-width: 645px) {
+
+    .product {
+        display: flex;
+        justify-content: center;
+        max-width: 95%;
         height: 15rem;
         margin: 30px auto;
         border: none;

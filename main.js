@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     // click behavior to show the name & price
                     // established to produce information ONLY ONE TIME upon click 
-                    product.addEventListener('click', () => showInfo(item), { once: true });
+                    product.addEventListener('mousemove', () => showInfo(item), { once: true });
 
                     
                     // the img element inside the li element
@@ -79,6 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     parentList.appendChild(product);
 
 
+                    // attempt to stick things inside div
+                    // breaks unless I stick div under list el
+                    // realize my plan probably works without divs anyway
+                    //container = document.createElement('div')
+
+                    //parentList.appendChild(container);
 
 
 
@@ -97,12 +103,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function showInfo(item) {
+    //container = document.createElement('div')
+
+
     // console.log(`The item: ${title} was clicked!`);
    // document.getElementsByClassName('product').innerText = item.title
     product2 = document.getElementById(item.id)
 
     // create element to put title in
-    productTitle = document.createElement('p')
+    productTitle = document.createElement('h2')
 
     // create class for title elements
     productTitle.classList.add('titleOfProducts')
@@ -115,8 +124,13 @@ function showInfo(item) {
     // change element to display item specified from API 
     productPrice.innerText = "$" +item.price
 
+    //container.appendChild(productTitle)
+    //container.appendChild(productPrice)
+
     // create child element with product2 parent element
     product2.appendChild(productTitle)
     product2.appendChild(productPrice)
+
+    
 
 };
