@@ -53,17 +53,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     // adding a class to the product which will make for easier styling
                     product.classList.add('product');
+
+                    product.id = item.id
                     
                     // We will need the title for the hover effect
                     let title = item.title;
                     let productPrice = item.price;
+
+
                     
                     // click behavior to show the name & price
-                    // It passes the item.title to the show product info, 
-                    // created second event listener on the same click to simultaneously display price
-                    product.addEventListener('click', () => showTitleInfo(title));
+                    // established to produce information ONLY ONE TIME upon click 
+                    product.addEventListener('click', () => showInfo(item), { once: true });
 
-                    product.addEventListener('click', () => showPriceInfo(productPrice));
                     
                     // the img element inside the li element
                     product.appendChild(productImg);
@@ -89,6 +91,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }        
 });
 
-function showTitleInfo(title) {
-    console.log(`The item: ${title} was clicked!`);
-    }
+function showInfo(item) {
+    // console.log(`The item: ${title} was clicked!`);
+   // document.getElementsByClassName('product').innerText = item.title
+    product2 = document.getElementById(item.id)
+
+    productTitle = document.createElement('p')
+    productTitle.classList.add('titleOfProducts')
+    
+    productTitle.innerText = item.title
+
+    productPrice = document.createElement('p')
+    productPrice.classList.add('priceOFProduct')
+
+    productPrice.innerText = item.price
+
+
+    product2.appendChild(productTitle)
+    product2.appendChild(productPrice)
+
+};
