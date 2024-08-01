@@ -444,9 +444,9 @@ footer {
     }
     
 }
-/*
-@media screen and (max-width: 364px) {
-    .img {
+
+@media screen and (max-width: 427px) {
+   /* .img {
         display:flex;
         margin: 20% 5%;
         max-width: 5rem;
@@ -454,14 +454,28 @@ footer {
 
         padding: 10% 5%;
     }
+*/
+
+    .product {
+        display: flex;
+ 
+        overflow: hidden;
+    }
 
     .titleOfProducts {
         display:flex;
+        flex-direction: column;
         margin: 5% 15%;
+        font-size: 1rem;
         padding: 10% 20%;
     }
+
+    .priceOFProduct {
+        display:flex;
+        flex-direction: column;
+    }
 }
-*/
+
 
 /*
 @media screen and (max-width: 364px) {
