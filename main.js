@@ -90,10 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
                 });
             })
 
@@ -133,6 +129,5 @@ function showInfo(item) {
     product2.appendChild(productTitle)
     product2.appendChild(productPrice)
 
-    
 
 };

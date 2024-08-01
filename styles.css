@@ -444,7 +444,7 @@ footer {
     }
     
 }
-
+/*
 @media screen and (max-width: 364px) {
     .img {
         display:flex;
@@ -454,8 +454,14 @@ footer {
 
         padding: 10% 5%;
     }
-}
 
+    .titleOfProducts {
+        display:flex;
+        margin: 5% 15%;
+        padding: 10% 20%;
+    }
+}
+*/
 
 /*
 @media screen and (max-width: 364px) {
