@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // established to produce information ONLY ONE TIME upon click 
                     //mousemove works funky in Chrome
                     // fix #1 is to test scroll
-                    product.addEventListener('scroll', () => showInfo(item), { once: true });
+                    product.addEventListener('mouseover', () => showInfo(item), { once: true });
 
                     
                     // the img element inside the li element
