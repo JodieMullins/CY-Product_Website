@@ -10,6 +10,9 @@
 
 
 import express from "express";
+
+import { shoesRouter } from "./shoes/shoes.router"
+
 /** 
  *  IMPORT FOR ROUTERS
 import { shoesRouter } from "./shoes/shoes.router"
@@ -33,9 +36,6 @@ const apiRouter = express.Router();
 // Shoes router
 apiRouter.use("/shoes", shoesRouter);
 
-// I don't have customers or orders to route yet
-/*apiRouter.use("/customers", customersRouter);*/
-/*apiRouter.use("/orders", ordersRouter);*/ // ROUTING
 
 export const routes = express.Router();
 routes.use("/api", apiRouter);
@@ -87,7 +87,8 @@ router.get('/', function (req, res, next) {
 router.get('/search', function (req, res, next) {
   let searchObject = {
     "id": req.query.id,
-    "name": req.query.name
+    "name": req.query.name,
+    "minbid": req.query.minbid
   };
 
   // go through the shoe JSON object and search for requested data
@@ -141,22 +142,7 @@ router.get('/:id', function (req, res, next) {
   });
 
 
-  
-router.post('/', function (req, res, next) {
-  // put into body of request the shoe object
-  shoeInfo.insert(req.body, function(data) {
-    // as long as succeeds, create 201 code and pass back data
-    res.status(201).json({
-      "status": 201,
-      "statusText": "Created",
-      "message": "New Pair Added.",
-      "data": data
-    });
-  }, function(err) {
-    next(err);
-  });
-});
-
+ 
 
 // Configure router so all routes are prefixed with /api/v1
 app.use('/api/', router);
@@ -186,7 +172,7 @@ app.use(function(err, req, res, next) {
 
 
 
-// Create Server to listen on port 3000 for web page
+// Create Server to listen on port 3000 for web page?
 let run = app.listen(PORT, (err) => {
   if(!err)
     console.log("Server is running and App is currently listening on port " + PORT + " at http://localhost:3000/")
@@ -196,7 +182,7 @@ let run = app.listen(PORT, (err) => {
 );
 
 
-// Create server to listen on port 5000 to interact with API
+// Create server to listen on port 5000 to interact with API?
 var server = app.listen(5000, function () {
     console.log('Node Server for API is running on http://localhost:5000/api.');
 });

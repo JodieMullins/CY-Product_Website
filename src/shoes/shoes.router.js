@@ -29,9 +29,9 @@ shoesRouter.get("/", async (req, res) =>{
 
     items.forEach((item) => {
 
-        item.name = displayItemName(req, item.name);
+        // item.name = displayItemName(req, item.name);
 
-        item.price = displayItemPrice(req,item.price);
+        item.minbid = displayItemPrice(req,item.minbid);
 
     });
     res.json(items);
