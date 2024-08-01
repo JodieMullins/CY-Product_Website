@@ -24,6 +24,7 @@ shoesRouter.get("/", async (req, res) =>{
 // 
 shoesRouter.get("/", async (req, res) =>{
 
+    
     const items = await getItems();
 
 
