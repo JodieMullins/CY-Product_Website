@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     product.id = item.id
                     
                     // We will need the title for the hover effect
-                    let title = item.title;
-                    let productPrice = item.price;
+                    //let title = item.title;
+                    //let productPrice = item.price;
 
 
 
@@ -101,7 +101,10 @@ function showInfo(item) {
    // document.getElementsByClassName('product').innerText = item.title
     product2 = document.getElementById(item.id)
 
+    // create element to put title in
     productTitle = document.createElement('p')
+
+    // create class for title elements
     productTitle.classList.add('titleOfProducts')
     
     productTitle.innerText = item.title
@@ -109,9 +112,10 @@ function showInfo(item) {
     productPrice = document.createElement('p')
     productPrice.classList.add('priceOFProduct')
 
+    // change element to display item specified from API 
     productPrice.innerText = item.price
 
-
+    // create child element with product2 parent element
     product2.appendChild(productTitle)
     product2.appendChild(productPrice)
 
