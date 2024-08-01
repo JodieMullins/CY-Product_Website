@@ -56,13 +56,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     product.id = item.id
                     
+
+                    product.id = item.id
+                    
                     // We will need the title for the hover effect
                     let title = item.title;
                     let productPrice = item.price;
 
 
+
+
                     
                     // click behavior to show the name & price
+                    // established to produce information ONLY ONE TIME upon click 
+                    product.addEventListener('click', () => showInfo(item), { once: true });
                     // established to produce information ONLY ONE TIME upon click 
                     product.addEventListener('click', () => showInfo(item), { once: true });
 
