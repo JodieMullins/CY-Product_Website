@@ -13,7 +13,6 @@ Unofficial features --
 
 
 
-
 ## Guideline Features: 
 
 - [x] Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc) {Intermediate} [Home]
@@ -25,13 +24,15 @@ Unofficial features --
 - [] Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file). {OPTIONAL - ATTEMPTED} {Easy/Intermediate} (Original attempt: https://github.com/JodieMullins/CY-WebDev)
 
 
-Special feature attempted thanks to Pluralsight: Mock API 
+Special feature attempted: Mock API 
 
 ----------------------------------------------------------------------------------------
 
 An easy way to run the project:
 
 *** You will likely have a better experience in FireFox, but this method will open via user's default browser ***
+
+<br> 
 
 1. Clone to local machine from GitHub
     - HOW TO CLONE: Determine your desired file path and open Git Bash within the directory of choice. Type 'git clone [git URL]' and open the project folder in VSCode.
