@@ -1,14 +1,14 @@
 # CY-Product_Website
 
+This repository utilizes HTML, CSS, and vanilla JavaScript to create what an interactive website may appear or behave like across browser and mobile views. Using API calls, a product page loads, and pages adjust depending on size of screen. Other pages include a temperature converter for vacationers, a sale countdown page, and a contact form.
 
-
-
-This repository utilizes HTML, CSS, and vanilla JavaScript to create what a website may look like across browser and mobile views. Using API calls, a product page loads, and pages adjust depending on size of screen. 
+Unofficial features --
 
 - [x] Responsive Design {Best Practice} [All Pages]
 
 - [x] Integrate a third-party API into project. {REQ}
 
+- [x] Utilized Local and Session Storage for name and email fields on the contact form
 
 
 
@@ -23,6 +23,7 @@ This repository utilizes HTML, CSS, and vanilla JavaScript to create what a webs
 - [x] Retrieve data from a third-party API and use it to display something within your app. {Easy} [https://fakestoreapi.com/] [Products]
 
 - [] Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file). {OPTIONAL - ATTEMPTED} {Easy/Intermediate} (Original attempt: https://github.com/JodieMullins/CY-WebDev)
+
 
 Special feature attempted thanks to Pluralsight: Mock API 
 
