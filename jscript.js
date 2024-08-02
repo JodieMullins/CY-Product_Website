@@ -13,6 +13,7 @@ function temperatureConverter(valNum) {
     
     let decision = " "
 
+    // decision output Celcius dependent
     if (valNum < 0) {
         decision = "Maybe with the thickest socks you've ever seen!"
         
@@ -139,7 +140,7 @@ bidImages(imgdata);
  * 
  ***/
 
-const productImages = ['']
+// const productImages = ['']
 
 
 
@@ -149,47 +150,47 @@ const productImages = ['']
  *          PROMO 
  * 
  ***/
+function countdownHalloweenSale() {
+    // grab today's date
+    let today = new Date();
+    // detail today's year
+    let saleYear = today.getFullYear();
 
-// grab today's date
-let today = new Date();
-// detail today's year
-let saleYear = today.getFullYear();
+    // if the date is after October 31st (so any time November 1 and later)
+    if (today.getMonth() == 9 && today.getDate() > 31) {
 
-// if the date is after October 31st (so any time November 1 and later)
-if (today.getMonth() == 9 && today.getDate() > 31) {
+        // add another year until the sale date
+        saleYear = saleYear + 1;
+    };
 
-    // add another year until the sale date
-    saleYear = saleYear + 1;
-};
+    // if today is Halloween exactly
+    if (today.getMonth() == 9 && today.getDate() === 31) {
 
-// if today is Halloween exactly
-if (today.getMonth() == 9 && today.getDate() === 31) {
+        // box should have a message
+    let saleMessage = "TODAY IS THE SALE! CHECK OUT THE SEASONAL PAGE!"
+    
+    // display message exclaiming day of sale
+    document.getElementById("countdown-here").innerText = saleMessage;
+    };
 
-    // box should have a message
-   let saleMessage = "TODAY IS THE SALE! CHECK OUT THE SEASONAL PAGE!"
-   
-   // display message exclaiming day of sale
-   document.getElementById("countdown-here").innerText = saleMessage;
-};
+    // create variable saleDate and set it equal to October 31st of closest upcoming sale
+    let saleDate = new Date(saleYear, 9, 31);
 
-// create variable saleDate and set it equal to October 31st of closest upcoming sale
-let saleDate = new Date(saleYear, 9, 31);
+    // calculating ms total of time in a day
+    let dayMilliseconds = 1000 * 60 * 60 * 24;
 
-// calculating ms total of time in a day
-let dayMilliseconds = 1000 * 60 * 60 * 24;
+    // Find remaining days until next sale
+    let remainingDays = Math.ceil(
+        (saleDate.getTime() - today.getTime()) / (dayMilliseconds)
+    );
 
-// Find remaining days until next sale
-let remainingDays = Math.ceil(
-    (saleDate.getTime() - today.getTime()) / (dayMilliseconds)
-);
+    // let todayMessage = "Today is " + today + "."
 
-// let todayMessage = "Today is " + today + "."
-
-let saleMessage = ("There are " + remainingDays + " days remaining until the next HUGE Halloween sale!");
+    let saleMessage = ("There are " + remainingDays + " days remaining until the next Halloween sale!");
 
 document.getElementById("countdown-here").innerText = saleMessage;
 
-
+};
 
 
 
