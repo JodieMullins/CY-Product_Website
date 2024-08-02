@@ -198,9 +198,9 @@ document.getElementById("countdown-here").innerText = saleMessage;
  *          contact 
  * 
  ***/
-// product.addEventListener('mouseover', () => showInfo(item), { once: true });
 
 // storage attempt
+/*
 function includeSomeStorage() {
 
     let uclientName = document.getElementById('contact-name').value
@@ -213,5 +213,39 @@ function includeSomeStorage() {
     let currentUserFullName = sessionStorage.getItem(uclientName)
 
     return currentUserFullName
+
+}
+
+function tryLocalStorage() {
+
+    let uEmail = document.getElementById('contact-email').value
+
+    window.localStorage.setItem("email", uEmail)
+}
+
+function includeSomeStorage() {
+
+    
+}*/
+
+
+function includeSomeStorage() {
+
+    let uclientName = document.getElementById('contact-name').value
+
+
+            // document.getElementById('contact-name').value
+
+    window.sessionStorage.setItem("name", uclientName)
+
+    let currentUserFullName = sessionStorage.getItem(uclientName)
+
+    let uEmail = document.getElementById('contact-email').value
+
+    window.localStorage.setItem("email", uEmail)
+
+    let userEmail = localStorage.getItem(uEmail)
+
+    return currentUserFullName, userEmail
 
 }
