@@ -195,7 +195,7 @@ document.getElementById("countdown-here").innerText = saleMessage;
 
 /***
  * 
- *          contact 
+ *          CONTACT  
  * 
  ***/
 
@@ -223,21 +223,19 @@ function tryLocalStorage() {
     window.localStorage.setItem("email", uEmail)
 }
 
-function includeSomeStorage() {
-
     
 }*/
 
-
+// Designed to run on submit from HTML
 function includeSomeStorage() {
-
+// grab value user puts in for name
     let uclientName = document.getElementById('contact-name').value
 
 
             // document.getElementById('contact-name').value
-
+// set the key "name" to user's Full name in Session Storage
     window.sessionStorage.setItem("name", uclientName)
-
+// Didn't notice changes so let's make sure we get the item back too
     let currentUserFullName = sessionStorage.getItem(uclientName)
 
     let uEmail = document.getElementById('contact-email').value
