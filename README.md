@@ -28,7 +28,7 @@ Special feature attempted: Mock API
 
 ----------------------------------------------------------------------------------------
 
-An easy way to run the project:
+### An easy way to run the project:
 
 *** You will likely have a better experience in FireFox, but this method will open via user's default browser ***
 
@@ -44,6 +44,7 @@ An easy way to run the project:
     - ensure Node.js is installed on the local machine
 
 4. Right-click within the 'index.html' file and choose 'Show Preview' to view / click on web pages. 
+    - also an option to view from browser in the hamburger menu available through the Live Preview window or by copy/pasting Live Preview window URL into a browser window
 
 NOTE: tested in FireFox and Chrome
 
@@ -51,7 +52,7 @@ NOTE: tested in FireFox and Chrome
 
 ### Special Thanks
 
-A huge thanks to all the mentors with Code:You that helped make this project possible from the January 2024 cohort. This project has been deleted and re-created about three or four times with various feature lists attempted, but it has been an indespensible learning experience. Thank you, Code:You mentors. <3 
+A huge thanks to all the mentors with Code:You that helped make this project possible from the January 2024 cohort. This project has been re-created a few times with various feature lists attempted, but it has been an indespensible learning experience. Thank you, Code:You mentors. <3 
 
 
 
