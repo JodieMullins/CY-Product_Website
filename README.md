@@ -1,14 +1,14 @@
 # CY-Product_Website
 
-This repository utilizes HTML, CSS, and vanilla JavaScript to create what an interactive website may appear or behave like across browser and mobile views. Using API calls, a product page loads, and pages adjust depending on size of screen. Other pages include a temperature converter for vacationers, a sale countdown page, and a contact form.
+This repository utilizes HTML, CSS, and vanilla JavaScript to create what an interactive website may appear or behave like across browser and mobile views. Using API calls, a product page loads, and pages adjust depending on size of screen(though, mobile screen display currently needs improvement). Other pages include a temperature converter for vacationers, a sale countdown page, and a contact form.
 
 Unofficial features --
 
-- [x] Responsive Design {Best Practice} [All Pages]
+- Responsive Design {Best Practice} [All Pages]
 
-- [x] Integrate a third-party API into project. {REQ}
+- Integrate a third-party API into project. {REQ}
 
-- [x] Utilized Local and Session Storage for name and email fields on the contact form
+- Utilized Session and Local Storage for name and email fields on the contact form
 
 
 

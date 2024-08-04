@@ -458,20 +458,23 @@ footer {
 
     .product {
         display: flex;
- 
         overflow: hidden;
+
     }
 
     .titleOfProducts {
         display:flex;
+        max-width: 30%;
         flex-direction: column;
         margin: 5% 15%;
         font-size: 1rem;
         padding: 10% 20%;
+
     }
 
     .priceOFProduct {
         display:flex;
+        max-width: 30%;
         flex-direction: column;
     }
 }
