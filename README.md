@@ -46,7 +46,6 @@ Special feature attempted: Mock API
 4. Right-click within the 'index.html' file and choose 'Show Preview' to view / click on web pages. 
     - also an option to view from browser in the hamburger menu available through the Live Preview window or by copy/pasting Live Preview window URL into a browser window
 
-NOTE: tested in FireFox and Chrome
 
 -------------------------------------------------------------------------------------------
 
