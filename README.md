@@ -1,6 +1,6 @@
 # CY-Product_Website
 
-This repository utilizes HTML, CSS, and vanilla JavaScript to create what an interactive website may appear or behave like across browser and mobile views. Using API calls, a product page loads, and pages adjust depending on size of screen(though, mobile screen display currently needs improvement). Other pages include a temperature converter for vacationers, a sale countdown page, and a contact form.
+This repository utilizes HTML, CSS, and vanilla JavaScript to create what an interactive website may appear or behave like across browser and mobile views. Using API calls, a product page loads, and pages adjust depending on size of screen. Other pages include a temperature converter for vacationers, a sale countdown page, and a contact form.
 
 Unofficial features --
 
@@ -13,6 +13,7 @@ Unofficial features --
 
 
 
+
 ## Guideline Features: 
 
 - [x] Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc) {Intermediate} [Home]
@@ -21,7 +22,7 @@ Unofficial features --
 
 - [x] Retrieve data from a third-party API and use it to display something within your app. {Easy} [https://fakestoreapi.com/] [Products]
 
-- [] Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file). {OPTIONAL - ATTEMPTED} {Easy/Intermediate} (Original attempt: https://github.com/JodieMullins/CY-WebDev)
+- Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file). {OPTIONAL - ATTEMPTED} {Easy/Intermediate} (Original attempt: https://github.com/JodieMullins/CY-WebDev)
 
 
 Special feature attempted: Mock API 
@@ -51,7 +52,7 @@ Special feature attempted: Mock API
 
 ### Special Thanks
 
-A huge thanks to all the mentors with Code:You that helped make this project possible from the January 2024 cohort. This project has been re-created a few times with various feature lists attempted, but it has been an indespensible learning experience. Thank you, Code:You mentors. <3 
+A huge thanks to all the mentors with Code:You that helped and have contributed to make this project possible from the January 2024 cohort. This project has been re-created a few times with various feature lists attempted, but it has been an indespensible learning experience. Thank you, Code:You mentors. <3 
 
 
 

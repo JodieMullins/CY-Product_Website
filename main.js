@@ -54,10 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     // adding a class to the product which will make for easier styling
                     product.classList.add('product');
 
+
+
+
+
+
+                    // I wrote this how I would write Python,
+                    // kinda forgot what I was doing here, but 
+                    // the product page breaks without this line. Great.
+                  
                     product.id = item.id
                     
 
-                    product.id = item.id
                     
                     // We will need the title for the hover effect
                     //let title = item.title;
@@ -66,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-                    
                     // click behavior to show the name & price
                     // established to produce information ONLY ONE TIME upon click 
                     //mousemove works funky in Chrome
