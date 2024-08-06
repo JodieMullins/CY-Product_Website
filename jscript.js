@@ -124,21 +124,12 @@ bidImages(imgdata);
 
 */
 
-
-
 /** 
 <div id="div-ggg1" class="divs-seasonal-images">
  //  create object to add alt 
     <img id="GGG-1" class="seasonal-selections" src="img/GGG-1.jpg" alt="AI-generated pair of open-toe pumps with red interior, tan exterior soles; heels are gradient dark to light blue with varying white, light blue, dark blue, to black straps covered in hand-painted floral designs of oranges, blues, lavenders. and creams." />
 </div> 
 */
-
-
-/***
- * 
- *          SEASONAL / DESIGNS 
- * 
- ***/
 
 // const productImages = ['']
 
@@ -188,7 +179,8 @@ function countdownHalloweenSale() {
 
     let saleMessage = ("There are " + remainingDays + " days remaining until the next Halloween sale!");
 
-document.getElementById("countdown-here").innerText = saleMessage;
+    // commented out today, but is available
+document.getElementById("countdown-here").innerText = saleMessage; //+ " Thanks for joining us on " + today;
 
 };
 
@@ -241,6 +233,7 @@ function includeSomeStorage() {
 
     let uEmail = document.getElementById('contact-email').value
 
+    // send email field into local storage
     window.localStorage.setItem("email", uEmail)
 
     let userEmail = localStorage.getItem(uEmail)
